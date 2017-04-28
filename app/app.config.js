@@ -17,18 +17,18 @@
 		//method for defining routes
 		function inAppdRouteProvider($stateProvider, $urlRouterProvider) {
 
-			$urlRouterProvider.otherwise('/inappd/dashboard');
+			$urlRouterProvider.otherwise('/angular-demo/dashboard');
 			$stateProvider
-			.state('inappd', {
-				url: '/inappd',
+			.state('angular-demo', {
+				url: '/angular-demo',
 				abstract: true,
-				templateUrl: '/angular-demo/app/layout/layout.html'
+				templateUrl: '/app/layout/layout.html'
 			})
-			.state('inappd.dashboard', {
+			.state('angular-demo.dashboard', {
 				url: '/dashboard',
 				views:{
 					'content': {
-						templateUrl: "/angular-demo/dashboard/views/dashboard.html",
+						templateUrl: "/dashboard/views/dashboard.html",
 						controller: "DashboardController",
 						controllerAs: 'dashboard'
 					}
