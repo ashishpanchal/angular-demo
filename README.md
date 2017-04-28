@@ -3,9 +3,9 @@
 ## Install
 Run `npm install` after cloning repo
 
-## start node server
+## Start node server
 
 `node server.js`
 
-## access following url
+## Access below url
 `http://localhost:8085`
