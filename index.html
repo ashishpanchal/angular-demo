@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="inAppd">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Angular Demo</title>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+<!-- Bootstrap -->
+<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="assets/lib/ag-grid/dist/angular-grid.css?ignore=notused5">
+<link rel="stylesheet" type="text/css" href="assets/lib/ag-grid/dist/theme-fresh.css?ignore=notused5">
+<link rel="stylesheet" type="text/css" href="assets/css/nv.d3.css">
+
+<script src="assets/lib/d3.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="assets/lib/nv.d3.js"></script>
+<script type="text/javascript" src="assets/lib/c3.min.js"></script>
+<script type="text/javascript" src="assets/lib/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="assets/lib/angular/angular.js"></script>
+<script type="text/javascript" src="assets/lib/ui-router/release/angular-ui-router.js"></script>
+<script src="assets/lib/angular-grid.js?ignore=notused5"></script>
+
+<script type="text/javascript" src="app/app.module.js"></script>
+<script type="text/javascript" src="app/app.config.js"></script>
+
+<!-- Dashboard module File Injection Start -->
+
+<script type="text/javascript" src="dashboard/dashboard.module.js"></script>
+<script type="text/javascript" src="dashboard/controllers/dashboard.controller.js"></script>
+<script type="text/javascript" src="dashboard/models/dashboard.service.js"></script>
+
+<!-- Dashboard module File Injection End -->
+<style type="text/css">
+.borderBox {background: #F1F0F3; border: 1px solid #ccc; text-align: center; line-height: 80px;margin-top: 15px;font-size: 13px; cursor: pointer;}
+.borderBox.active {background: #6DAEE7; border-color: transparent;}
+.borderBox.active a{color: #fff;font-weight: bold;}
+.borderBox a{text-align: left; color: #000;}
+.margin15 {margin:15px 0px;}
+.donutchart {height:250px;width:250px;display: inline-block;}
+</style>
+</head>
+<body>
+
+<!-- Begin page View-->
+<div ui-view></div>
+</body>
+</html>

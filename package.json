@@ -1,0 +1,17 @@
+{
+  "name": "angular-demo",
+  "version": "1.0.0",
+  "description": "\"angular-node demo\"",
+  "main": "server.js",
+  "keywords": [
+    "\"Angular",
+    "Node\""
+  ],
+  "author": "\"Ashish\"",
+  "dependencies": {
+    "express": "4.9.5"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}

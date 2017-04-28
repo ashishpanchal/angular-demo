@@ -1,0 +1,28 @@
+<div class="container">
+	<div class="row">
+		<div ng-repeat="(key,val) in dashboard.tabs" class="col-lg-3 col-md-3 col-sm-3">
+			<div ng-click="dashboard.refreshData(key);" class="borderBox clearfix" ng-class="dashboard.selected==key?'active':''">
+				<a href="javascript:void(0);">{{val}}</a>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12">
+		  	<div class="margin15 clearfix">
+		  		<svg id="chart1" style="height:400px;border: 1px solid #ccc;"></svg>
+		  	</div>
+			<div class="margin15 borderBox clearfix center-align">
+				<div id="chart2" class="donutchart"></div>
+				<div id="chart3" class="donutchart"></div>
+				<div id="chart4" class="donutchart"></div>
+				<div id="chart5" class="donutchart"></div>
+			</div>
+			<div class="col-xs-4 clearfix pull-right">
+            	<input class="form-control" type="text" ng-model="gridOptions.quickFilterText" placeholder="Type text to filter..."/>
+        	</div>
+        	<div class="col-xs-12">
+				<div ag-grid="gridOptions" style="height:400px;width:100%" class="ag-fresh"></div>
+			</div>
+		</div>
+	</div>
+</div>
